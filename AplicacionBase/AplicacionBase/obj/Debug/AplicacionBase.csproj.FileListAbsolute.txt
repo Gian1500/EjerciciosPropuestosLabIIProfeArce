@@ -1,0 +1,7 @@
+C:\Users\Gian\Desktop\Repositorio\Laboratorio II Consola\AplicacionBase\AplicacionBase\bin\Debug\AplicacionBase.exe.config
+C:\Users\Gian\Desktop\Repositorio\Laboratorio II Consola\AplicacionBase\AplicacionBase\bin\Debug\AplicacionBase.exe
+C:\Users\Gian\Desktop\Repositorio\Laboratorio II Consola\AplicacionBase\AplicacionBase\bin\Debug\AplicacionBase.pdb
+C:\Users\Gian\Desktop\Repositorio\Laboratorio II Consola\AplicacionBase\AplicacionBase\obj\Debug\AplicacionBase.csprojAssemblyReference.cache
+C:\Users\Gian\Desktop\Repositorio\Laboratorio II Consola\AplicacionBase\AplicacionBase\obj\Debug\AplicacionBase.csproj.CoreCompileInputs.cache
+C:\Users\Gian\Desktop\Repositorio\Laboratorio II Consola\AplicacionBase\AplicacionBase\obj\Debug\AplicacionBase.exe
+C:\Users\Gian\Desktop\Repositorio\Laboratorio II Consola\AplicacionBase\AplicacionBase\obj\Debug\AplicacionBase.pdb

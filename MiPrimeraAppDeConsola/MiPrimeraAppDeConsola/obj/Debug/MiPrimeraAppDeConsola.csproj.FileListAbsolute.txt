@@ -1,0 +1,7 @@
+c:\users\gian\source\repos\MiPrimeraAppDeConsola\MiPrimeraAppDeConsola\bin\Debug\MiPrimeraAppDeConsola.exe.config
+c:\users\gian\source\repos\MiPrimeraAppDeConsola\MiPrimeraAppDeConsola\bin\Debug\MiPrimeraAppDeConsola.exe
+c:\users\gian\source\repos\MiPrimeraAppDeConsola\MiPrimeraAppDeConsola\bin\Debug\MiPrimeraAppDeConsola.pdb
+c:\users\gian\source\repos\MiPrimeraAppDeConsola\MiPrimeraAppDeConsola\obj\Debug\MiPrimeraAppDeConsola.csprojAssemblyReference.cache
+c:\users\gian\source\repos\MiPrimeraAppDeConsola\MiPrimeraAppDeConsola\obj\Debug\MiPrimeraAppDeConsola.csproj.CoreCompileInputs.cache
+c:\users\gian\source\repos\MiPrimeraAppDeConsola\MiPrimeraAppDeConsola\obj\Debug\MiPrimeraAppDeConsola.exe
+c:\users\gian\source\repos\MiPrimeraAppDeConsola\MiPrimeraAppDeConsola\obj\Debug\MiPrimeraAppDeConsola.pdb
