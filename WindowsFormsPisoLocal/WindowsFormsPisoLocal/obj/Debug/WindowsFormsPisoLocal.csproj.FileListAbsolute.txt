@@ -1,0 +1,10 @@
+C:\Users\Gian\Desktop\Repositorio\Laboratorio II Consola\WindowsFormsPisoLocal\WindowsFormsPisoLocal\bin\Debug\WindowsFormsPisoLocal.exe.config
+C:\Users\Gian\Desktop\Repositorio\Laboratorio II Consola\WindowsFormsPisoLocal\WindowsFormsPisoLocal\bin\Debug\WindowsFormsPisoLocal.exe
+C:\Users\Gian\Desktop\Repositorio\Laboratorio II Consola\WindowsFormsPisoLocal\WindowsFormsPisoLocal\bin\Debug\WindowsFormsPisoLocal.pdb
+C:\Users\Gian\Desktop\Repositorio\Laboratorio II Consola\WindowsFormsPisoLocal\WindowsFormsPisoLocal\obj\Debug\WindowsFormsPisoLocal.csprojAssemblyReference.cache
+C:\Users\Gian\Desktop\Repositorio\Laboratorio II Consola\WindowsFormsPisoLocal\WindowsFormsPisoLocal\obj\Debug\WindowsFormsPisoLocal.Properties.Resources.resources
+C:\Users\Gian\Desktop\Repositorio\Laboratorio II Consola\WindowsFormsPisoLocal\WindowsFormsPisoLocal\obj\Debug\WindowsFormsPisoLocal.csproj.GenerateResource.cache
+C:\Users\Gian\Desktop\Repositorio\Laboratorio II Consola\WindowsFormsPisoLocal\WindowsFormsPisoLocal\obj\Debug\WindowsFormsPisoLocal.csproj.CoreCompileInputs.cache
+C:\Users\Gian\Desktop\Repositorio\Laboratorio II Consola\WindowsFormsPisoLocal\WindowsFormsPisoLocal\obj\Debug\WindowsFormsPisoLocal.exe
+C:\Users\Gian\Desktop\Repositorio\Laboratorio II Consola\WindowsFormsPisoLocal\WindowsFormsPisoLocal\obj\Debug\WindowsFormsPisoLocal.pdb
+C:\Users\Gian\Desktop\Repositorio\Laboratorio II Consola\WindowsFormsPisoLocal\WindowsFormsPisoLocal\obj\Debug\WindowsFormsPisoLocal.Form1.resources
