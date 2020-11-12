@@ -46,10 +46,10 @@ namespace Negocio
             return cn.EliminarCliente(dni);
         }
 
-        public int InsertarProducto(int codigo, string nombre, int stock, double pUnitario, double descuento, double pNeto)
+        public int InsertarProducto(int codigo, string nombre, int stock, double pCosto, double pVenta)
         {
 
-            return cn.InsertarProducto(codigo,nombre,stock,pUnitario,descuento,pNeto);
+            return cn.InsertarProducto(codigo,nombre,stock, pCosto, pVenta);
         }
 
         public int EliminarProducto(int codigo)
@@ -62,6 +62,11 @@ namespace Negocio
         public int AgregarVenta(int codigo, int cantidad)
         {
             return cn.AgregarVenta(codigo,cantidad);
+        }
+
+        public double consultaVenta(int codigo)
+        {
+            return cn.consultaVenta(codigo);
         }
     }
 }

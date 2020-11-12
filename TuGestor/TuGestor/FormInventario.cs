@@ -25,7 +25,7 @@ namespace TuGestor
         private void btn_AgregarInv_Click(object sender, EventArgs e)
         {
             cn.InsertarProducto(Convert.ToInt32(txt_CodigoProd.Text),txt_NombreProd.Text, Convert.ToInt32(txt_Stock.Text), 
-                Convert.ToDouble(txt_PrecioU.Text), Convert.ToDouble(txt_Descuento.Text),Convert.ToDouble(txt_PrecioN.Text));
+                Convert.ToDouble(txt_PrecioC.Text),Convert.ToDouble(txt_PrecioV.Text));
 
             dataGridViewInv.DataSource = cn.ConsultaDTInv();
         }
@@ -75,6 +75,11 @@ namespace TuGestor
                 //el resto de teclas pulsadas se desactivan
                 e.Handled = true;
             }
+        }
+
+        private void txt_Stock_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

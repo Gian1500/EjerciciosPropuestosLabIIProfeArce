@@ -34,9 +34,8 @@
             this.btn_CerrarInv = new System.Windows.Forms.Button();
             this.btn_EliminarInv = new System.Windows.Forms.Button();
             this.btn_AgregarInv = new System.Windows.Forms.Button();
-            this.txt_PrecioN = new System.Windows.Forms.TextBox();
-            this.txt_Descuento = new System.Windows.Forms.TextBox();
-            this.txt_PrecioU = new System.Windows.Forms.TextBox();
+            this.txt_PrecioV = new System.Windows.Forms.TextBox();
+            this.txt_PrecioC = new System.Windows.Forms.TextBox();
             this.txt_Stock = new System.Windows.Forms.TextBox();
             this.txt_CodigoProd = new System.Windows.Forms.TextBox();
             this.txt_NombreProd = new System.Windows.Forms.TextBox();
@@ -44,7 +43,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewInv)).BeginInit();
@@ -66,9 +64,8 @@
             this.panel1.Controls.Add(this.btn_CerrarInv);
             this.panel1.Controls.Add(this.btn_EliminarInv);
             this.panel1.Controls.Add(this.btn_AgregarInv);
-            this.panel1.Controls.Add(this.txt_PrecioN);
-            this.panel1.Controls.Add(this.txt_Descuento);
-            this.panel1.Controls.Add(this.txt_PrecioU);
+            this.panel1.Controls.Add(this.txt_PrecioV);
+            this.panel1.Controls.Add(this.txt_PrecioC);
             this.panel1.Controls.Add(this.txt_Stock);
             this.panel1.Controls.Add(this.txt_CodigoProd);
             this.panel1.Controls.Add(this.txt_NombreProd);
@@ -76,7 +73,6 @@
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Location = new System.Drawing.Point(1, 1);
@@ -122,37 +118,27 @@
             this.btn_AgregarInv.UseVisualStyleBackColor = false;
             this.btn_AgregarInv.Click += new System.EventHandler(this.btn_AgregarInv_Click);
             // 
-            // txt_PrecioN
+            // txt_PrecioV
             // 
-            this.txt_PrecioN.Location = new System.Drawing.Point(3, 352);
-            this.txt_PrecioN.Name = "txt_PrecioN";
-            this.txt_PrecioN.Size = new System.Drawing.Size(203, 20);
-            this.txt_PrecioN.TabIndex = 18;
-            this.txt_PrecioN.Text = "0";
-            this.txt_PrecioN.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.txt_PrecioN.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.compruebaSoloNumeros);
+            this.txt_PrecioV.Location = new System.Drawing.Point(3, 300);
+            this.txt_PrecioV.Name = "txt_PrecioV";
+            this.txt_PrecioV.Size = new System.Drawing.Size(203, 20);
+            this.txt_PrecioV.TabIndex = 18;
+            this.txt_PrecioV.Text = "0";
+            this.txt_PrecioV.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txt_PrecioV.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.compruebaSoloNumeros);
             // 
-            // txt_Descuento
+            // txt_PrecioC
             // 
-            this.txt_Descuento.Location = new System.Drawing.Point(3, 296);
-            this.txt_Descuento.Name = "txt_Descuento";
-            this.txt_Descuento.Size = new System.Drawing.Size(203, 20);
-            this.txt_Descuento.TabIndex = 18;
-            this.txt_Descuento.Text = "0";
-            this.txt_Descuento.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.txt_Descuento.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.compruebaSoloNumeros);
-            // 
-            // txt_PrecioU
-            // 
-            this.txt_PrecioU.BackColor = System.Drawing.Color.IndianRed;
-            this.txt_PrecioU.Location = new System.Drawing.Point(4, 240);
-            this.txt_PrecioU.Name = "txt_PrecioU";
-            this.txt_PrecioU.Size = new System.Drawing.Size(203, 20);
-            this.txt_PrecioU.TabIndex = 18;
-            this.txt_PrecioU.Text = "0";
-            this.txt_PrecioU.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.txt_PrecioU.TextChanged += new System.EventHandler(this.txt_PrecioU_TextChanged);
-            this.txt_PrecioU.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.compruebaSoloNumeros);
+            this.txt_PrecioC.BackColor = System.Drawing.Color.White;
+            this.txt_PrecioC.Location = new System.Drawing.Point(4, 240);
+            this.txt_PrecioC.Name = "txt_PrecioC";
+            this.txt_PrecioC.Size = new System.Drawing.Size(203, 20);
+            this.txt_PrecioC.TabIndex = 18;
+            this.txt_PrecioC.Text = "0";
+            this.txt_PrecioC.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txt_PrecioC.TextChanged += new System.EventHandler(this.txt_PrecioU_TextChanged);
+            this.txt_PrecioC.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.compruebaSoloNumeros);
             // 
             // txt_Stock
             // 
@@ -162,10 +148,12 @@
             this.txt_Stock.TabIndex = 17;
             this.txt_Stock.Text = "0";
             this.txt_Stock.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txt_Stock.TextChanged += new System.EventHandler(this.txt_Stock_TextChanged);
             this.txt_Stock.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.compruebaSoloNumeros);
             // 
             // txt_CodigoProd
             // 
+            this.txt_CodigoProd.BackColor = System.Drawing.Color.IndianRed;
             this.txt_CodigoProd.Location = new System.Drawing.Point(4, 126);
             this.txt_CodigoProd.Name = "txt_CodigoProd";
             this.txt_CodigoProd.Size = new System.Drawing.Size(203, 20);
@@ -224,23 +212,11 @@
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.Control;
-            this.label7.Location = new System.Drawing.Point(3, 330);
+            this.label7.Location = new System.Drawing.Point(3, 278);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(90, 19);
+            this.label7.Size = new System.Drawing.Size(116, 19);
             this.label7.TabIndex = 12;
-            this.label7.Text = "Precio Neto";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.SystemColors.Control;
-            this.label6.Location = new System.Drawing.Point(3, 274);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(81, 19);
-            this.label6.TabIndex = 12;
-            this.label6.Text = "Descuento";
+            this.label7.Text = "Precio de venta";
             // 
             // label5
             // 
@@ -250,9 +226,9 @@
             this.label5.ForeColor = System.Drawing.SystemColors.Control;
             this.label5.Location = new System.Drawing.Point(3, 218);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(111, 19);
+            this.label5.Size = new System.Drawing.Size(114, 19);
             this.label5.TabIndex = 12;
-            this.label5.Text = "Precio unitario";
+            this.label5.Text = "Precio de costo";
             // 
             // label2
             // 
@@ -294,11 +270,9 @@
         private System.Windows.Forms.TextBox txt_CodigoProd;
         private System.Windows.Forms.TextBox txt_NombreProd;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txt_PrecioN;
-        private System.Windows.Forms.TextBox txt_Descuento;
-        private System.Windows.Forms.TextBox txt_PrecioU;
+        private System.Windows.Forms.TextBox txt_PrecioV;
+        private System.Windows.Forms.TextBox txt_PrecioC;
         private System.Windows.Forms.TextBox txt_Stock;
         private System.Windows.Forms.Button btn_EliminarInv;
         private System.Windows.Forms.Button btn_AgregarInv;

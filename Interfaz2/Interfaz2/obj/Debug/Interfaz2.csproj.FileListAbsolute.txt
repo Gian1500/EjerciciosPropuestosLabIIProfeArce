@@ -1,0 +1,7 @@
+C:\Users\Gian\source\repos\Interfaz2\Interfaz2\bin\Debug\Interfaz2.exe.config
+C:\Users\Gian\source\repos\Interfaz2\Interfaz2\bin\Debug\Interfaz2.exe
+C:\Users\Gian\source\repos\Interfaz2\Interfaz2\bin\Debug\Interfaz2.pdb
+C:\Users\Gian\source\repos\Interfaz2\Interfaz2\obj\Debug\Interfaz2.csprojAssemblyReference.cache
+C:\Users\Gian\source\repos\Interfaz2\Interfaz2\obj\Debug\Interfaz2.csproj.CoreCompileInputs.cache
+C:\Users\Gian\source\repos\Interfaz2\Interfaz2\obj\Debug\Interfaz2.exe
+C:\Users\Gian\source\repos\Interfaz2\Interfaz2\obj\Debug\Interfaz2.pdb

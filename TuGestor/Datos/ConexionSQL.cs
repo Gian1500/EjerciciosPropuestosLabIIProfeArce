@@ -90,14 +90,14 @@ namespace Datos
 
         }
 
-        public int InsertarProducto(int codigo, string nombre,int stock, double pUnitario, double descuento, double pNeto)
+        public int InsertarProducto(int codigo, string nombre,int stock, double pCosto, double pVenta)
         {
             int flag = 0;
 
             conexion.Open();
 
             MySqlCommand cmd = new MySqlCommand("insert into Inventario values('" + codigo + "','" + nombre + "','" + stock + "','"
-                + pUnitario + "','"+ descuento + "','" + pNeto + "')", conexion);
+                + pCosto + "','" + pVenta + "')", conexion);
 
             flag = cmd.ExecuteNonQuery();
 
@@ -139,16 +139,29 @@ namespace Datos
         public int AgregarVenta(int codigo, int cantidad)
         {
             int flag = 0;
+            int cant = 0;
+
+
+            MySqlCommand cmd1 = new MySqlCommand();
+            cmd1.CommandType = CommandType.Text;
+            cmd1.CommandText = "Select Stock from Inventario where Codigo='"+codigo+"'";
+            cmd1.Connection = conexion;
 
             conexion.Open();
 
-            MySqlCommand cmd1 = new MySqlCommand("Select Stock from Inventario where Codigo={0}",conexion);
+            MySqlDataReader dr = cmd1.ExecuteReader();
 
-            MySqlDataReader cant = cmd1.ExecuteReader();
+            dr.Read();
 
-            cantidad = cantidad - Convert.ToInt32(cant);
+            cant = dr.GetInt32(0);
 
-            MySqlCommand cmd = new MySqlCommand("Update Inventario set Stock='"+cantidad+ "'where Codigo='"+codigo+"'", conexion);
+            conexion.Close();
+
+            cant = cant - cantidad;
+
+            conexion.Open();
+
+            MySqlCommand cmd = new MySqlCommand("Update Inventario set Stock='"+cant+ "'where Codigo='"+codigo+"'", conexion);
 
             flag = cmd.ExecuteNonQuery();
 
@@ -156,5 +169,27 @@ namespace Datos
 
             return flag;
         }
-    }
+
+        public double consultaVenta(int codigo)
+        {
+            double res=0;
+
+            conexion.Open();
+
+            string query= "select * from Inventario where Codigo='"+codigo+"'";
+
+            MySqlCommand cmd = new MySqlCommand(query, conexion);
+            MySqlDataReader reg = cmd.ExecuteReader();
+
+            reg.Read();
+
+            res=Convert.ToDouble(reg["Precio Venta"]);
+
+            conexion.Close();
+
+            return res;
+
+
+        }   
+    }   
 }
